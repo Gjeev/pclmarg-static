@@ -26,6 +26,9 @@ p{
 .header {
     background-color: #1f1f1f;
 }
+.background_color a:hover{
+  color: white;
+}
 
 #nav_bar{
     z-index: 100000;
@@ -194,7 +197,7 @@ p{
     /* margin:200px; */
     width: 100%;
     /* height: 553px; */
-    height: calc(85vh);
+    height: calc(100vh - 123px);
     /* color: white; */
     text-align: center;
     display: flex;
@@ -249,6 +252,7 @@ while the background image is loading */
 }
 .container{
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -274,7 +278,6 @@ while the background image is loading */
 .carouseldivision{
     margin:3rem 3rem;
     padding: 0rem 5rem;
-    /* height: calc(70vh); */
 }
 
 .boxes{
@@ -697,12 +700,13 @@ while the background image is loading */
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 2em;
     position: absolute;
     bottom: 0; left: 0;
-   
-    background-color: rgba(0,0,0,0.9);
+    overflow-y: scroll;
+    background-color:  #eb592cc4;
     color: white;
+    font-size: 32px;
   }
   
   .hovercap {
@@ -862,4 +866,72 @@ while the background image is loading */
   .person{
     width: 50%;
     margin: 2rem 0 ;
+  }
+  .research-div {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eb5a2c;
+    margin-bottom: 1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .publications-text{
+    background-color: #eb5a2c;
+    border: #eb5a2c 1px solid;
+    border-radius: 7px;
+    width: 30%;
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .publications{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+  }
+  .pub{
+    width: 30%;
+    height: auto;
+    border: #eb5a2c 2px dashed;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+  }
+  .pub:hover {
+    box-shadow: 0px 0px 21px -3px #eb592cd1;
+
+  }
+  .pub h3{
+    color: #eb5a2c;
+    margin-bottom: 1em;
+  }
+  .pub a{
+    text-decoration: none;
+    color: #eb5a2c;
+  }
+  .pub h3:hover {
+    text-decoration: underline;
   }
